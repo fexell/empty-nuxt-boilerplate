@@ -7,6 +7,19 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt'
   ],
+  build: {
+    transpile: [
+      // To prevent FontAwesome complaining that the icon cannot be found
+      // See this github issue: https://github.com/FortAwesome/vue-fontawesome/issues/215
+      '@fortawesome/vue-fontawesome',
+    ],
+  },
+  css: [
+    // Without this the icons becomes ridiculously big
+    '@fortawesome/fontawesome-svg-core/style.css',
+  ],
+
+  // Add Google Fonts here ⬇
   googleFonts: {
     families: {
       Roboto: true,
