@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   },
   css: [
     // Without this the icons becomes ridiculously big
-    '@fortawesome/fontawesome-svg-core/style.css',
+    '@fortawesome/fontawesome-svg-core/styles.css',
   ],
 
   // Add Google Fonts here ⬇
